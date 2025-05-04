@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A brief page description">
+    <meta name="keywords" content="html,cheatsheet" />
+   
+    
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Password cracking</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/loginpopup.css">
+	<script  type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/newsletter.js"></script>
+	<script type="text/javascript" src="script/sidenav.js"></script>
+	<script type="text/javascript" src="script/signinpopup.js"></script>
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+	
+
+</head>
+<body>
+	<div id="main">
+
+		<header id="header" >
+
+
+			<!-- top header -->
+             <div id="top-intro">
+             	
+	             	<img src="images/logo.png" alt="">
+
+	             	<div id="site-name">
+		             	<h1>
+		             		<a href="index.html">Dynamic Bytes</a>
+		             	</h1>	             		
+	             	</div>
+
+				
+
+             </div>
+            <!-- nav login / sigup  -->
+			<nav >
+				<ul>
+				  
+				  <li><a href="register.html">Register</a></li>
+				  <li>
+				  	<a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li id="sidebarbtn"><span onclick="openNav()">&#9776;</span></li>
+				</ul>
+			</nav>
+	           <!-- main top nav -->
+				<div id="topnavlinks">
+						<ul>
+
+							<li><a><span onclick="openNav()"><img src="images/index.png" alt=""></span></a></li>
+							<li><a href="">Forum</a></li>
+					        <li><a href="">Metasploit Basics</a></li>
+					        <li><a href="facebookhacks.html">Facebook Hacks</a></li>
+					        <li><a href="passwordcracking.html">Password Cracking</a></li>
+					        <li><a href="wifihacking.html">Wi-Fi Hacking</a></li>
+					        <li><a href="pythonbruteforce.html">Linux Basics</a></li>
+					        <li><a href="wifijamming.html">Wifi Jamming</a></li>
+					        <li><a href="trackwifi.html">Track Wifi</a></li>
+					        <li><a href="crackshadow.html">Crack Shadow</a></li>
+					        <li><a href="autobrute.html">Brute Force</a></li>
+
+				        </ul>        
+                </div>
+                <!-- sidebar nav -->
+
+                <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  <a href="register.html">Register</a>
+				  <a href="about.html">About</a>
+				  <a href="contact.html">Contact</a>
+				</div>
+
+				<!-- login popup -->
+
+				<div id="signin" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" id="signupForm">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close">&times;</span>
+				      <img src="images/login.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container" id="login-content">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit" name="login">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1" id="login-content-forget">
+				      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+				<!-- signup popup -->
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+		</header><!-- /header -->
+
+
+
+		<section id="content">
+			
+					   <!-- Insert to your webpage where you want to display the slider -->
+			    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1200px;margin:0px auto 48px;">
+			        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+			            <ul class="amazingslider-slides" style="display:none;">
+			                <li><img src="images/jamming.png" alt="Use MDK3 for Advanced Wi-Fi Jamming"  title="Use MDK3 for Advanced Wi-Fi Jamming" data-description="You may have heard of a signal jammer before, usually referring to a device that blasts out a strong enough radio signal to drown out the reception of nearby devices like cell phones. Purpose-built jammer hardware is outright illegal in many countries, but Wi-Fi is vulnerable to several different jamming attacks that can be done with Kali Linux and a wireless network adapter. 
+			Traditional signal jamming has been a cat and mouse game of detecting and disabling signals an opponent is using to communicate. Cutting off a target&apos;s ability to communicate leaves them isolated and vulnerable, making jamming these signals a top priority in modern day electronic warfare. Countries today have developed capabilities to jam and spoof cell phones, GPS, Wi-Fi, and even satellite links." />
+			<a href="wifijamming.html" target="_blank"><button class="as-btn-blueborder-medium">Learn More</button></a>
+			                </li>
+			                <li><img src="images/trackwifi.png" alt="Track Wi-Fi Devices & Connect to Them Using Probequest"  title="Track Wi-Fi Devices & Connect to Them Using Probequest" data-description="Wi-Fi devices are continually emitting &quot;probe frames,&quot; calling out for nearby Wi-Fi networks to connect to. Beyond being a privacy risk, probe frames can also be used to track or take over the data connection of nearby devices. We&apos;ll explain how to see nearby devices emitting probe frames using Probequest and what can be done with this information. In order to function, Wi-Fi devices are always doing one of two things to try to discover available networks; They either send out beacon frames or probe frames." />
+			<a href="trackwifi.html" target="_blank"><button class="as-btn-blueborder-medium">Learn More</button></a>
+			                </li>
+			                <li><img src="images/autobrute.png" alt="Automate Brute-Force Attacks for Nmap Scans"  title="Automate Brute-Force Attacks for Nmap Scans" data-description="Using Hydra, Ncrack, and other brute-forcing tools to crack passwords for the first time can be frustrating and confusing. To ease into the process, let&apos;s discuss automating and optimizing brute-force attacks for potentially vulnerable services such as SMTP, SSH, IMAP, and FTP discovered by Nmap, a popular network scanning utility. BruteSpray, developed by Jacob Robles and Shane Young, is a Python script capable of processing an Nmap scan output and automating brute-force attacks against discovered services using Medusa, a popular brute-forcing tool. BruteSpray is the much-needed nexus that unifies Nmap scans and brute-force attacks." />
+			<a href="autobrute.html" target="_blank"><button class="as-btn-blueborder-medium">Learn More</button></a>
+			                </li>
+			            </ul>
+			        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a></div>
+			        </div>
+			    </div>
+			    <!-- End of body section HTML codes -->
+			<div id="content-container">
+			
+			<div id="post">
+                <img src="images/wifi/jamming.png" alt="">
+				<a href="wifijamming.html">
+					<h2>Use MDK3 for Advanced Wi-Fi Jamming </h2>
+				</a>
+			</div>
+			<div id="post">
+                <img src="images/wifi/trackwifi.png" alt="">
+				<a href="trackwifi.html">
+					<h2>Track Wi-Fi Devices & Connect to Them Using Probequest </h2>
+				</a>
+			</div>
+			<div id="post">
+                <img src="images/passwordcracking/autobrute.png" alt="">
+				<a href="autobrute.html">
+					<h2>Automate Brute-Force Attacks for Nmap Scans</h2>
+				</a>
+			</div>
+			
+  			
+
+
+			</div>
+			
+
+	    </section>
+
+		<aside>
+			<!-- newsletter popup -->
+				<div id="list-builder"></div>
+				<div id="popup-box">
+				    <img src="images/close.png" id="popup-close" />
+				    <div id="popup-box-content">
+				        <h1>Subscribe to our Newsletter </h1>
+				        <p>
+				            Stay up to date on the latest posts about technology and computer science plus receive exclusive content by
+				            subscribing to our newsletter.
+				        </p>
+				        <form id="popup-form" action="https://email_list_service_api.com">
+				            <input type="hidden" name="list" value="key_list_etc" />
+				            <input type="text" name="name" placeholder="Full Name" />
+				            <input type="text" name="email" placeholder="Email Address" />
+				            <button type="button" name="subscribe">Subscribe</button>
+				        </form>
+				    </div>
+				</div>
+		</aside>
+
+		<footer>
+			
+		</footer>
+	</div>
+
+
+
+</body>
+</html>

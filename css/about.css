@@ -1,0 +1,65 @@
+#article{
+	text-align: left;
+
+	width: 64%;
+	align-content: center;
+	font-family: sans;
+	margin-left: 16%;
+	background-color: white;
+	border: 1px solid cadetblue;
+	border-radius: 20px;
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+}
+
+#article p{
+
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+#article h1{
+
+	font-size: 44px;
+	margin-bottom: 3%;
+	color: #394f50;
+	text-align: center;
+}
+#article h2{
+	
+	font-size: 28px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	color: #355080e6;
+}
+#article h3{
+	
+	font-size: 22px;
+	margin-bottom: 1%;
+	margin-top: 2%;
+	color: #5d7886;
+}
+#article h4{
+	
+	font-size: 19px;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	color: #b2b8bc;
+}
+#article img{
+	
+	float: right;
+}
+#art-section{
+	
+	align-content: center;
+	text-align: center;
+	float: left;
+	background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");
+	/*! background-repeat: no-repeat; */
+	width: 100%;
+	height: auto;
+}

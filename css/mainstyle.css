@@ -1,0 +1,293 @@
+*{margin: 0; padding: 0}
+body{
+  width: auto;
+  height: auto;
+}
+#main{
+width: auto;
+transition: margin-left .5s;
+padding: 0px;
+}
+#header{
+width: auto;
+
+background-image: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+  top: 0;
+  opacity: 0.6;
+}
+
+nav li {
+  float: right;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background-image: url("https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif");
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#sidebarbtn span{
+  font-size:30px;cursor:pointer ; color: darkgray;
+}
+#sidebarbtn{
+  float: left;
+}
+#top-intro{
+  color:azure;
+  text-align: center;
+  font-size: 26px;
+  font-family: sans;
+}
+#top-intro img{
+  height:158px; 
+  width: 405px;
+}
+#top-intro {
+  text-align: center;
+}
+#site-name a:hover{
+  
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+  opacity: 1;
+
+  color: azure;
+}
+#site-name a {
+   display: block;  
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  opacity: 0.5;
+  font-size: 34px;
+   width: 20%;
+   margin-left: 40%;
+}
+#site-name{
+  text-align: center;
+
+}
+
+
+
+#topnavlinks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1919;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+#topnavlinks  li {
+  float: left;
+}
+
+#topnavlinks li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#topnavlinks li a img{
+  width: 40px;
+  height: 38px;
+  margin: -8px;
+}
+
+#topnavlinks li a:hover {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+
+/* newsletter popup */
+
+#list-builder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    filter: alpha(opacity=80);
+  opacity: 0.8;
+    display: none;
+}
+
+#popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #22404e80;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border: 10px solid #288792B3;
+    display: none;
+    opacity: 1;
+    padding: 3%;
+    line-height: 30px;
+}
+
+#popup-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 40px;
+    background: #1b6398e6;
+    border-radius: 25px;
+}
+
+#popup-box h1 {
+    margin-bottom: 10px;
+}
+
+#popup-box form {
+    margin-bottom: 0px;
+}
+
+#popup-box input {
+    padding: 10px;
+    border: 1px solid #333;
+    width: 49%;
+}
+
+#popup-box button {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* signup css */
+
+
+
+/* Footer css */
+
+
+
+
+
+/*content css */
+
+#content{
+
+  width: 100%;
+  height: auto;
+}
+#content-container{
+
+  width: auto;
+  height: auto;
+  margin: 1%;
+}
+#post{
+width: 31%;
+height: 268px;
+transition: 1s;
+opacity: 0.8;
+background: transparent;
+border-radius: 19px;
+float: left;
+margin-right: 34px;
+margin-top: 1%;
+margin-bottom: 5%;
+border: 1px solid #BFBFBF;
+box-shadow: 10px 10px 5px #aaaaaa;
+}
+#post:hover{
+  background-color: black;
+  opacity: 1;
+  transform: scale(1.1);
+  background: #e4e5efcc;
+  border-radius: 20px;
+}
+#post a{
+  
+  text-decoration: none;
+  color:transparent;
+}
+#post:hover h2{
+  
+  text-decoration: none;
+  color: #0b110d; 
+  
+  font-size: 18px;
+  text-align: center;
+}
+#post h2{
+  
+  font-size: 18px;
+  
+}
+#post img{
+  
+  border-radius: 18px;
+  width: 100%;
+  height: auto;
+}

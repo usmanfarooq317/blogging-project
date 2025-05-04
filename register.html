@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A brief page description">
+    <meta name="keywords" content="html,cheatsheet" />
+   
+    
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Dynamic Bytes</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/loginpopup.css">
+	<script  type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/newsletter.js"></script>
+	<script type="text/javascript" src="script/sidenav.js"></script>
+	<script type="text/javascript" src="script/signinpopup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div id="main">
+
+		<header id="header" >
+
+
+			<!-- top header -->
+             <div id="top-intro">
+             	
+	             	<img src="images/logo.png" alt="">
+
+	             	<div id="site-name">
+		             	<h1>
+		             		<a href="index.html">Dynamic Bytes</a>
+		             	</h1>	             		
+	             	</div>
+
+				
+
+             </div>
+            <!-- nav login / sigup  -->
+			<nav >
+				<ul>
+				  
+				  <li><a href="register.html">Register</a></li>
+				  <li>
+				  	<a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li id="sidebarbtn"><span onclick="openNav()">&#9776;</span></li>
+				</ul>
+			</nav>
+	           <!-- main top nav -->
+				<div id="topnavlinks">
+						<ul>
+
+							<li><a><span onclick="openNav()"><img src="images/index.png" alt=""></span></a></li>
+							<li><a href="">Forum</a></li>
+					        <li><a href="">Metasploit Basics</a></li>
+					        <li><a href="facebookhacks.html">Facebook Hacks</a></li>
+					        <li><a href="passwordcracking.html">Password Cracking</a></li>
+					        <li><a href="wifihacking.html">Wi-Fi Hacking</a></li>
+					        <li><a href="pythonbruteforce.html">Linux Basics</a></li>
+					        <li><a href="wifijamming.html">Wifi Jamming</a></li>
+					        <li><a href="trackwifi.html">Track Wifi</a></li>
+					        <li><a href="crackshadow.html">Crack Shadow</a></li>
+					        <li><a href="autobrute.html">Brute Force</a></li>
+
+				        </ul>        
+                </div>
+                <!-- sidebar nav -->
+
+                <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  <a href="register.html">Register</a>
+				  <a href="about.html">About</a>
+				  <a href="contact.html">Contact</a>
+				</div>
+
+				<!-- login popup -->
+
+				<div id="signin" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" id="signupForm">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close">&times;</span>
+				      <img src="images/login.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container" id="login-content">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit" name="login">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1" id="login-content-forget">
+				      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+				<!-- signup popup -->
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+		</header><!-- /header -->
+
+		<section id="content">
+			<div id="register">
+
+				<form action="/action_page.php">
+				  <div class="container">
+				    <h1>Register</h1>
+				    <p>Please fill in this form to create an account.</p>
+				    <hr>
+
+				    <label for="email"><b>Email</b></label>
+				    <input type="text" placeholder="Enter Email" name="email" required>
+
+				    <label for="psw"><b>Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="psw" required>
+
+				    <label for="psw-repeat"><b>Repeat Password</b></label>
+				    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+				    <hr>
+				    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+				    <button type="submit" class="registerbtn">Register</button>
+				  </div>
+				  
+				  <div class="container signin">
+				    <p>Already have an account? <a href="#">Sign in</a>.</p>
+				  </div>
+				</form>
+			</div>
+			
+
+	    </section>
+
+		<aside>
+			<!-- newsletter popup -->
+				<div id="list-builder"></div>
+				<div id="popup-box">
+				    <img src="images/close.png" id="popup-close" />
+				    <div id="popup-box-content">
+				        <h1>Subscribe to our Newsletter </h1>
+				        <p>
+				            Stay up to date on the latest posts about technology and computer science plus receive exclusive content by
+				            subscribing to our newsletter.
+				        </p>
+				        <form id="popup-form" action="https://email_list_service_api.com">
+				            <input type="hidden" name="list" value="key_list_etc" />
+				            <input type="text" name="name" placeholder="Full Name" />
+				            <input type="text" name="email" placeholder="Email Address" />
+				            <button type="button" name="subscribe">Subscribe</button>
+				        </form>
+				    </div>
+				</div>
+		</aside>
+
+		<footer>
+			
+		</footer>
+	</div>
+
+
+
+</body>
+</html>

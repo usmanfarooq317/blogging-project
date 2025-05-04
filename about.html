@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A brief page description">
+    <meta name="keywords" content="html,cheatsheet" />
+   
+    
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Dynamic Bytes</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/loginpopup.css">
+	<script  type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/newsletter.js"></script>
+	<script type="text/javascript" src="script/sidenav.js"></script>
+	<script type="text/javascript" src="script/signinpopup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+	<div id="main">
+
+		<header id="header" >
+
+
+			<!-- top header -->
+             <div id="top-intro">
+             	
+	             	<img src="images/logo.png" alt="">
+
+	             	<div id="site-name">
+		             	<h1>
+		             		<a href="index.html">Dynamic Bytes</a>
+		             	</h1>	             		
+	             	</div>
+
+				
+
+             </div>
+            <!-- nav login / sigup  -->
+			<nav >
+				<ul>
+				  
+				  <li><a href="register.html">Register</a></li>
+				  <li>
+				  	<a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li id="sidebarbtn"><span onclick="openNav()">&#9776;</span></li>
+				</ul>
+			</nav>
+	           <!-- main top nav -->
+				<div id="topnavlinks">
+						<ul>
+
+							<li><a><span onclick="openNav()"><img src="images/index.png" alt=""></span></a></li>
+							<li><a href="">Forum</a></li>
+					        <li><a href="">Metasploit Basics</a></li>
+					        <li><a href="facebookhacks.html">Facebook Hacks</a></li>
+					        <li><a href="passwordcracking.html">Password Cracking</a></li>
+					        <li><a href="wifihacking.html">Wi-Fi Hacking</a></li>
+					        <li><a href="pythonbruteforce.html">Linux Basics</a></li>
+					        <li><a href="wifijamming.html">Wifi Jamming</a></li>
+					        <li><a href="trackwifi.html">Track Wifi</a></li>
+					        <li><a href="crackshadow.html">Crack Shadow</a></li>
+					        <li><a href="autobrute.html">Brute Force</a></li>
+
+				        </ul>        
+                </div>
+                <!-- sidebar nav -->
+
+                <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  <a href="register.html">Register</a>
+				  <a href="about.html">About</a>
+				  <a href="contact.html">Contact</a>
+				</div>
+
+				<!-- login popup -->
+
+				<div id="signin" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" id="signupForm">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close">&times;</span>
+				      <img src="images/login.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container" id="login-content">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit" name="login">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1" id="login-content-forget">
+				      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+				<!-- signup popup -->
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+		</header><!-- /header -->
+
+
+
+		<section id="art-section">
+			<div id="article">
+				<h1>About Us</h1>
+				<h2>The Company</h2>
+				<p>
+					We launched WonderHowTo in January 2008 with our own money, and later, with professional backing from General Catalyst. Given our backgrounds in television programming, motion graphics, and software development, early on we chose to pursue instructional topics we were most curious about. With an original taxonomy of 476 categories, sometimes we wandered pretty far off the reservation. But we always kept exploring. More recently, we have chosen to narrow our focus into fewer verticals we found genuinely intriguing, inherently dynamic (and not evergreen), and ripe for future innovation. 
+				</p>
+				<p>
+					To create even greater focus and expertise, in early 2017 with approximately 12 million monthly uniques, we launched the WonderHowTo Network. Four new sibling verticals, covering not just How-Tos, but the latest news, reviews, rumors, and insider information on the areas we find the most interesting. We would love to hear your feedback. Help us make these verticals...wonderful. 
+				</p>
+				<h2>The Team</h2>
+				<img src="images/about/about1.png" alt="">
+				<h3><strong><b>Stephen Chao</b></strong></h3> 
+				<h4>Co-Founder</h4>
+				
+				<p>
+					Co-founder with Mike G. I majored in Latin at Harvard. Spent two gonzo years hunting stories for the National Enquirer. My eyes were opened by the tireless curiosity of the case study method at Harvard Business School. Before the era of massive fragmentation, I ran Fox Television and USA Network. At WonderHowTo, our glorious burden is to explore those verticals we find...wonderful. 
+				</p>
+				<img src="images/about/about2.png" alt="">
+				<h3><strong><b>Mike Goedecke</b></strong></h3>
+				<h4>Co-Founder</h4>
+				
+				<p>
+					Hi, my name is Mike and I am one of the founders of WonderHowTo (with Stephen Chao). My passion is filmmaking, directing and shooting to be specific. I got my MFA from USC film school. I'm on the set whenever I get the chance. I love Art and Design and have had my own company for 20 years creating commercials, network branding and short films. 
+				</p>
+				<img src="images/about/about3.png" alt="">
+				<h3><strong><b>Bryan Crow</b></strong></h3>
+				<h4>CEO / CTO</h4>
+				
+				<p>
+					Got started coding by hacking together a home-brew simon game for the SEGA Dreamcast VMU at 15, and more officially by studying CS & IT Management at CTU. Now 1 start-up sold, 2 kids, 5 domains, and 25 programming languages later, I'm proud to have grown the WonderHowTo network of sites from zero to over 2 billion pageviews. 
+				</p>
+				<img src="images/about/about4.png" alt="">
+				<h3><strong><b>Jennifer Welsh</b></strong></h3>
+				<h4>Editor in Chief</h4>
+				
+				<p>
+					As a young girl, I spent most afternoons in my mother's research lab sorting instruments, eventually growing flasks of cells and testing out compounds that could potentially be used to treat cancer. Our dinner table discussions prominently featured the word "apoptosis" and drove my passion for everything science and tech. I parlayed this love into an undergraduate degree in Biological Sciences from the University of Notre Dame, then into a job running the cell culture and antiviral drug toxicity testing wing at a biotechnology startup in San Francisco. When I got sick of the smell of ethanol and the buzz and blue glow of the sterilizing UV lights, I enrolled in the University of California, Santa Cruz's Science Communication program to learn about writing and journalism, and to develop my passion for new media and blogging. After stints at WIRED, The Scientist, Discover Magazine, and LiveScience, I spent a few years at Business Insider, where I built the science vertical from scratch and helped launch the ephemeral standalone site Tech Insider. In 2016, I joined WonderHowTo to start building our network of sites focused on science and technology, drive editorial operations site-wide, and open our New York City offices. 
+				</p>
+				<img src="images/about/about5.png" alt="">
+				<h3><strong><b>Justin Meyers</b></strong></h3>
+				<h4>Managing Editor</h4>
+				
+				<p>
+					Writing has always been my passion, I just haven’t always known it. As a young child, I’d draw my own comic books with elaborate storylines because I thought I could do better than everyone else. In high school, I was the only kid who could get away with profanity in assignments because I didn’t just use it to be cool. When I became a commercial/industrial electrician, I’d complete crossword puzzles at lunch and write short film ideas at night. During my 4+ years as a US Army 11B, I fell in love with David Lynch’s Mulholland Dr. and penned multiple novellas in my limited spare time that I believed would make great films one day. In college, I had the habit of turning three-page essays in 15-pagers because everything was just that fascinating to me. I earned my screenwriting degree at Columbia College Hollywood where I dabbled in film editing, cinematography, and photography, and found out that I excelled at script editing/doctoring. I began working for WonderHowTo part-time in 2008 curating videos for every topic imaginable, eventually hosting my own Scrabble blog, until I settled in naturally to a full-time editor position specializing in Macs/iPhones, my preferred tools of the trade. These days, I run Gadget Hacks’ iOS department and help maintain quality across the whole WonderHowTo network. 
+				</p>
+
+
+
+
+			</div>
+			
+
+	    </section>
+
+		<aside>
+			<!-- newsletter popup -->
+				<div id="list-builder"></div>
+				<div id="popup-box">
+				    <img src="images/close.png" id="popup-close" />
+				    <div id="popup-box-content">
+				        <h1>Subscribe to our Newsletter </h1>
+				        <p>
+				            Stay up to date on the latest posts about technology and computer science plus receive exclusive content by
+				            subscribing to our newsletter.
+				        </p>
+				        <form id="popup-form" action="https://email_list_service_api.com">
+				            <input type="hidden" name="list" value="key_list_etc" />
+				            <input type="text" name="name" placeholder="Full Name" />
+				            <input type="text" name="email" placeholder="Email Address" />
+				            <button type="button" name="subscribe">Subscribe</button>
+				        </form>
+				    </div>
+				</div>
+
+		</aside>
+
+		<footer>
+			
+		</footer>
+	</div>
+
+
+
+</body>
+</html>

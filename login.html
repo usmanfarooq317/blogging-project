@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A brief page description">
+    <meta name="keywords" content="html,cheatsheet" />
+   
+    
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/login.css">
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginLeft= "0";
+		  document.body.style.backgroundColor = "white";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
+	</script>
+</head>
+<body>
+	<div id="main">
+
+		<header id="header" >
+
+
+			<!-- top header -->
+             <div id="top-intro">
+             	
+	             	<img src="images/logo.png" alt="">
+
+	             	<div id="site-name">
+		             	<h1>
+		             		<a href="index.html">Dynamic Bytes</a>
+		             	</h1>	             		
+	             	</div>
+
+				
+
+             </div>
+            <!-- nav login / sigup  -->
+			<nav >
+				<ul>
+				  
+				  <li><a href="register.html">Register</a></li>
+				  <li>
+				  	<a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li id="sidebarbtn"><span onclick="openNav()">&#9776;</span></li>
+				</ul>
+			</nav>
+	           <!-- main top nav -->
+				<div id="topnavlinks">
+						<ul>
+
+							<li><a><span onclick="openNav()"><img src="images/index.png" alt=""></span></a></li>
+							<li><a href="">Forum</a></li>
+					        <li><a href="">Metasploit Basics</a></li>
+					        <li><a href="facebookhacks.html">Facebook Hacks</a></li>
+					        <li><a href="passwordcracking.html">Password Cracking</a></li>
+					        <li><a href="wifihacking.html">Wi-Fi Hacking</a></li>
+					        <li><a href="pythonbruteforce.html">Linux Basics</a></li>
+					        <li><a href="wifijamming.html">Wifi Jamming</a></li>
+					        <li><a href="trackwifi.html">Track Wifi</a></li>
+					        <li><a href="crackshadow.html">Crack Shadow</a></li>
+					        <li><a href="autobrute.html">Brute Force</a></li>
+
+				        </ul>        
+                </div>
+                <!-- sidebar nav -->
+
+                <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  <a href="register.html">Register</a>
+				  <a href="about.html">About</a>
+				  <a href="contact.html">Contact</a>
+				</div>
+
+				<!-- login popup -->
+
+				<div id="signin" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" id="signupForm">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close">&times;</span>
+				      <img src="images/login.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container" id="login-content">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit" name="login">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1" id="login-content-forget">
+				      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+				<!-- signup popup -->
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+		</header><!-- /header -->
+
+		<section>
+			<div id="body">
+				<div id="contact"><<img src="images/contact.png" alt=""></div>
+				<div id="h1">Log in</div>
+				<form>
+					<p id="email">Enter Username</p><br>
+
+					<input type="text" name="name" id="sabkuch" placeholder="Enter Username"><br>
+					
+					<p id="password">Enter Password</p><br>
+					
+					<input type="text" name="name" id="sabkuch" placeholder="Enter Password"><br>
+					<br>
+					<button type="submit" id="submit">Login</button>
+					<p id="forget">Forget your Password?         Create an new Account?</p>
+				
+			    </form>
+			</div>
+		</section>
+
+		<aside>
+			
+			
+		</aside>
+
+		<footer>
+			
+		</footer>
+	</div>
+
+
+
+</body>
+</html>

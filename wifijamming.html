@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A brief page description">
+    <meta name="keywords" content="html,cheatsheet" />
+   
+    
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Cracking Shadow</title>
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="css/loginpopup.css">
+	<script  type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/newsletter.js"></script>
+	<script type="text/javascript" src="script/sidenav.js"></script>
+	<script type="text/javascript" src="script/signinpopup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/article.css">
+</head>
+<body>
+	<div id="main">
+
+		<header id="header" >
+
+
+			<!-- top header -->
+             <div id="top-intro">
+             	
+	             	<img src="images/logo.png" alt="">
+
+	             	<div id="site-name">
+		             	<h1>
+		             		<a href="index.html">Dynamic Bytes</a>
+		             	</h1>	             		
+	             	</div>
+
+				
+
+             </div>
+            <!-- nav login / sigup  -->
+			<nav >
+				<ul>
+				  
+				  <li><a href="register.html">Register</a></li>
+				  <li>
+				  	<a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  </li>
+				  <li><a href="about.html">About</a></li>
+				  <li id="sidebarbtn"><span onclick="openNav()">&#9776;</span></li>
+				</ul>
+			</nav>
+	           <!-- main top nav -->
+				<div id="topnavlinks">
+						<ul>
+
+							<li><a><span onclick="openNav()"><img src="images/index.png" alt=""></span></a></li>
+							<li><a href="">Forum</a></li>
+					        <li><a href="">Metasploit Basics</a></li>
+					        <li><a href="facebookhacks.html">Facebook Hacks</a></li>
+					        <li><a href="passwordcracking.html">Password Cracking</a></li>
+					        <li><a href="wifihacking.html">Wi-Fi Hacking</a></li>
+					        <li><a href="pythonbruteforce.html">Linux Basics</a></li>
+					        <li><a href="wifijamming.html">Wifi Jamming</a></li>
+					        <li><a href="trackwifi.html">Track Wifi</a></li>
+					        <li><a href="crackshadow.html">Crack Shadow</a></li>
+					        <li><a href="autobrute.html">Brute Force</a></li>
+
+				        </ul>        
+                </div>
+                <!-- sidebar nav -->
+
+                <div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#home" onclick="document.getElementById('signin').style.display='block'" style="width:auto;">Login</a>
+				  <a href="register.html">Register</a>
+				  <a href="about.html">About</a>
+				  <a href="contact.html">Contact</a>
+				</div>
+
+				<!-- login popup -->
+
+				<div id="signin" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php" id="signupForm">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close">&times;</span>
+				      <img src="images/login.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container" id="login-content">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit" name="login">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1" id="login-content-forget">
+				      <button type="button" onclick="document.getElementById('signin').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+				<!-- signup popup -->
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="/action_page.php">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div class="container">
+				      <label for="uname"><b>Username</b></label>
+				      <input type="text" placeholder="Enter Username" name="uname" required>
+
+				      <label for="psw"><b>Password</b></label>
+				      <input type="password" placeholder="Enter Password" name="psw" required>
+				        
+				      <button type="submit">Login</button>
+				      <label>
+				        <input type="checkbox" checked="checked" name="remember"> Remember me
+				      </label>
+				    </div>
+
+				    <div class="container" style="background-color:#f1f1f1">
+				      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				      <span class="psw">Forgot <a href="#">password?</a></span>
+				    </div>
+				  </form>
+				</div>
+
+
+		</header><!-- /header -->
+
+
+
+		<section id="art-section">
+			<div id="article">
+				
+				<h1>Use MDK3 for Advanced Wi-Fi Jamming  </h1>
+				<p>You may have heard of a signal jammer before, usually referring to a device that blasts out a strong enough radio signal to drown out the reception of nearby devices like cell phones. Purpose-built jammer hardware is outright illegal in many countries, but Wi-Fi is vulnerable to several different jamming attacks that can be done with Kali Linux and a wireless network adapter.
+				</p>
+				
+				<p>
+					Traditional signal jamming has been a cat and mouse game of detecting and disabling signals an opponent is using to communicate. Cutting off a target's ability to communicate leaves them isolated and vulnerable, making jamming these signals a top priority in modern day electronic warfare. Countries today have developed capabilities to jam and spoof cell phones, GPS, Wi-Fi, and even satellite links.
+										
+					</p>
+				<iframe width="980" height="530" src="https://www.youtube.com/embed/zMaOR9lL2Sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h2>Different Types of Jamming</h2>
+				<p>
+					There are two main types of jammers: elementary and advanced. Here, we'll be discussing elementary Wi-Fi jamming, focusing on unencrypted management frames.
+
+                     Elementary jammers can be broken into two main types: proactive and reactive. The first type, a proactive jammer, is one that continuously functions whether there is traffic on a network or not. We'll be using MDK3 as a deceptive jammer, which injects normal-seeming packets that have a malicious effect on the network.
+				</p>
+				
+				<p>
+					
+
+                   DJammers used in electronic warfare typically require equipment that overwhelms the signal of the target with radio energy, making it impossible to distinguish between the signal and the noise being introduced to the channel the target is using to communicate. This kind of jamming is popular because it works, but it also requires specialized equipment that is banned or heavily regulated in most countries.
+				</p>
+				<h2>Deauthentication Packets</h2>
+				<p>
+				   The most common way this sort of attack is done is with deauthentication packets. These are a type of "management" frame responsible for disconnecting a device from an access point. Forging these packets is the key to hacking many Wi-Fi networks, as you can forcibly disconnect any client from the network at any time. The ease of which this can be done is somewhat frightening and is often done as part of gathering a WPA handshake for cracking.
+
+                   Aside from momentarily using this disconnection to harvest a handshake to crack, you can also just let those deauths keep coming, which has the effect of peppering the client with deauth packets seemingly from the network they are connected to. Because these frames aren't encrypted, many programs take advantage of management frames by forging them and sending them to either one or all devices on a network.
+			    </p>
+               
+
+               <p>
+               	After grabbing the IP address and taking note of the port numbers that are open, further Nmap scans can reveal the operating system (-O) being used to host a remote website.
+               </p>
+              
+               <p>
+                  Finally, we can even learn about the versions of software running on the ports we find open. If we see one that is vulnerable to a known attack, this could make our job on the network much easier. Using the IP address we discovered earlier, we can run another scan with -sV that reveals that httpd 2.0 is being used on the target machine.
+               </p>
+
+               
+               <p>
+               	   These details combined — the IP address of a remote website or server, the operating system running on the device, and the version of any application running on open ports we discover — is everything a hacker needs to get started attacking devices on a network.
+               </p>
+               <h2>Dissasociation Packets</h2>
+               <p>
+               	    Disassociation packets are another type of management frame that is used to disconnect a node (meaning any device like a laptop or cell phone) from a nearby access point. The difference between deauthentication and disassociation frames is primarily the way they are used.
+
+                    An AP looking to disconnect a rogue device would send a deauthentication packet to inform the device it has been disconnected from the network, whereas a disassociation packet is used to disconnect any nodes when the AP is powering down, rebooting, or leaving the area.
+
+                     Different networks may be equipped with different countermeasures, so deauthentication itself may not work. In fact, WPA3 protects against this attack, as do some types of WPA2. According to the Wi-Fi Alliance website:
+				</p>
+				<h2><strong>Step 1 : </strong>MDK3 vs. Aireplay-ng</h2>
+				<p>
+					To run a basic scan, we can identify an IP address of interest to run the scan against. One of the most basic but informative scans is to run Nmap, specify a target IP address, and then type -A to enable OS detection, version detection, script scanning, and traceroute.
+
+				</p>
+				
+				<p>
+					Even against a single target, a basic scan can yield a lot of information. Here, we simply ran the scan on the IP address for WonderHowTo.com. This can be run against a device on your local network, like a router, or a remote server, like the one hosting WonderHowTo.com.
+				</p>
+				<h2><strong>Step 2 : </strong> Calculate the Subnet & Scan a Range to Discover Devices</h2>
+  		        <p>
+                   In order to identify other devices on a local network, it's useful to calculate the subnet range. This is the range of possible IP addresses given out to devices on a network, and knowing it allows you to scan through all the possible IP addresses a device on the network could have.
+                <br><br>
+                   A handy tool to do this for you is IPcalc. This tool will take your IP address (which is easy to find by typing ifconfig or ip a in a terminal window) and calculate the subnet range based on it. Doing so will give you a number like "192.168.0.0/24," which specifies a range of IP addresses. In the example below, the subnet is calculated as 127.0.0.0/24.
+		
+				</p>
+				<img src="images/article1/image6.png" alt="">
+				<p>
+					In order to run a scan including information about the services running on devices we find, we can open a terminal window and type the following command, adding in your network range where I use "172.16.42.0/24" as an example. The scan is a little slow, so you can also use an -F flag instead of the -A to do a faster scan of the most common ports.
+				</p>
+				
+                <p>
+                	We're basically running Nmap with no arguments except the -A flag. We should expect to see an output like above, showing discovered devices and the services running on them.
+					<br><br>
+                    Another handy tool for network discovery is arp-scan, which can sometimes show devices that Nmap misses. We can use Nmap to conduct an ARP scan with the -PR request, which is quite fast and aggressive at bringing back online hosts.
+                </p>
+                <img src="images/article1/image8.png" alt="">
+                <h2><strong>Step 3 : </strong>Create a Target List of Active Hosts</h2>
+                <p>
+                	Now we can calculate all the possible IP addresses on the local network and discover them either with a -F (fast) scan, by running Nmap with no arguments but the -A flag for a slower scan with more info, or with a -PR scan capable of quickly sweeping a local network for active hosts.
+                    <br><br>
+                    Finally, if you want to create a TXT file of hosts you discovered, you can use the command seen below to build a list to avoid needing to scan the entire network each time we run a subsequent scan. For instance, to scan for devices with a port 80 open and save them to a list, we can use some Linux tools and the -oG "greppable output" flag to help us cut through the output Nmap provides.
+                </p>
+                <p>
+                	By running nmap -p 80 -oG - 192.168.0.0/24 — with the network range substituted for yours — you can add | awk '/80\/open/ {print $2}' >> port80.txt to output the IP addresses belonging to discovered devices to a TXT file called "port80.txt."
+                </p>
+                
+                <p>
+                	Here, the awk command is looking for lines containing the port number and the result "open," with the second string in each line (in this case, the IP address) saved by the cat command to a new file called port80.txt
+                </p>
+                <h2><strong>Step 4 : </strong>Identify the Operating System on Discovered Devices</h2>
+                <p>
+                	One of the most helpful things to know about a device we discover on a network is the operating system it's running. Here, we can take the TXT target list we populated in the previous step and run an operating system scan, which requires root privileges. We can use the -O flag to run an operating system scan, and the -iL flag to tell Nmap we want to read from a TXT file of target hosts.
+                </p>
+                <img src="images/article1/image10.png" alt="">
+                <p>
+                	This tactic allows us to get as much information as possible about the operating system from whatever list of targets we want to run it against, whether internal network targets or a list of website IP addresses.
+                </p>
+                <p>
+                	The next step is discovering the versions of the applications running on open ports. This may show us a port that is running software that is out of date and has a known vulnerability. To run this scan, you can use the -sV flag against a target.
+                </p>
+                <p>
+                    Here, we've found some very specific information about our host, allowing us to potentially identify an attack against the software listening behind the port.
+                </p>
+                <h2><strong>Step 5 : </strong>Advanced Scans & Workarounds</h2>
+                <p>
+                	There may be some circumstances where you're having a difficult time scanning a network because the ping sent by Nmap are dropped by a firewall on the router. This can make it look like no devices are up, when you know they are. To avoid this, you can include the -Pn flag, which will drop the ping and sometimes allow you to connect directly to devices and get a response.
+                     <br><br>
+                    If you're scanning on a network you don't want to be detected on, you can perform a decoy scan with the -D flag to make it more difficult to detect who is conducting the scan on the network. An example would look like the command below, and requires root privileges.
+                </p>
+                <img src="images/article1/image12.png" alt="">
+                <p>
+                	If you need more information about what's happening, you can strike a key while the scan is progressing to get some information about how it's proceeding or add a -v to increase the verbosity (how much information the script gives). Generally, you can keep adding more v's to the -v according to how frustrated or angry you get to learn more information about what's happening.
+                </p>
+                <img src="images/article1/image13.png" alt="">
+                <p>
+                	Here, we can see the reason reported for the port 80 being up, allowing us to delve deeper into what parts of a scan a device may be replying to or ignoring. Be warned, you will see everything the scan is doing, and this can produce a lot of output on a complicated scan.
+                </p>
+				<h2> Nmap Lights Up the Dark</h2>
+				<p>
+				   Finding your way around a network for the first time can be a harrowing experience for a beginner, whether you're learning about network exploitation for the first time or simply trying to find your router.
+				</p>
+				<p>
+				   Keep in mind, while networks scans are fine (and a great idea) to run on your own network to see what's connected, this kind of scan may not be welcome on your work network or another network you don't own. If your employer looks for suspicious behavior on their networks, extensively scanning can be easily interpreted as the threatening behavior if you have no good reason to be performing the scan.
+				</p>
+				<p>
+				   One of the most powerful things about Nmap is that it's scriptable with options like -oG and can be used to feed into other tools, so if you've ever imagined building a tool that needs to be aware of other devices on the same network, Nmap might be just what  you're looking for.
+				</p>
+			</div>
+			
+
+	    </section>
+
+		<aside>
+			<!-- newsletter popup -->
+				<div id="list-builder"></div>
+				<div id="popup-box">
+				    <img src="images/close.png" id="popup-close" />
+				    <div id="popup-box-content">
+				        <h1>Subscribe to our Newsletter </h1>
+				        <p>
+				            Stay up to date on the latest posts about technology and computer science plus receive exclusive content by
+				            subscribing to our newsletter.
+				        </p>
+				        <form id="popup-form" action="https://email_list_service_api.com">
+				            <input type="hidden" name="list" value="key_list_etc" />
+				            <input type="text" name="name" placeholder="Full Name" />
+				            <input type="text" name="email" placeholder="Email Address" />
+				            <button type="button" name="subscribe">Subscribe</button>
+				        </form>
+				    </div>
+				</div>
+		</aside>
+
+		<footer>
+			
+		</footer>
+	</div>
+
+
+
+</body>
+</html>
